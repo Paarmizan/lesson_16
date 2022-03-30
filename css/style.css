@@ -1,0 +1,501 @@
+/* ===============ПОДКЛЮЧЕНИЯ=============== */
+
+@import "null.css";
+/* font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===============СКАЧЕННЫЕ ШРИФТЫ=============== */
+
+/* ===============WRAPPER=============== */
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* ===============INDEX=============== */
+body {
+    padding: 50px 0px;
+    background-color: #e8e8e8;
+}
+.doggie-form {
+    max-width: 585px;
+    background: #5d62b5;
+    border-radius: 40px;
+    margin: 0 auto;
+    padding: 76px 58px;
+    font-family: "Roboto";
+}
+.doggie-form__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 30px;
+}
+.doggie-form__title {
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 43px;
+}
+.doggie-form__box > input,
+.doggie-form__box > textarea {
+    flex: 1 1 47%;
+    min-height: 44px;
+    background-color: #5d62b5;
+    outline: 2px solid #dfe0f0;
+    border-radius: 10px;
+    padding: 0px 0px 0px 23.5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.doggie-form__box > input:focus,
+.doggie-form__box > textarea:focus {
+    outline: 2px solid #ffd8d7;
+    color: #ffd8d7;
+}
+
+.doggie-form__box > input::placeholder,
+.doggie-form__box > textarea::placeholder {
+    color: #dfe0f0;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.doggie-form__box > input:focus::placeholder,
+.doggie-form__box > textarea:focus::placeholder {
+    color: #ffd8d7;
+}
+
+.doggie-form__name {
+}
+.doggie-form__email {
+}
+.doggie-form__phone {
+}
+.doggie-form__service {
+}
+#doggie-form__about-us {
+    flex: 1 1 100%;
+    min-height: 180px;
+    resize: none;
+    padding-top: 17px;
+}
+.doggie-form__send {
+    min-height: 57px;
+    background-color: #f2726f;
+    border-radius: 8px;
+    padding: 0px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.15px;
+    font-weight: 700;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.doggie-form__send:hover {
+    background-color: #f57b79;
+}
+
+.doggie-form__send:active {
+    background-color: #e96b69;
+}
+
+.doggie-form__send:focus {
+    background-color: #f57b79;
+    outline: none;
+}
+
+/* ================= */
+
+.button {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #0156ff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+.button:hover {
+    background-color: #2b72ff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.button:active {
+    background-color: #0156ff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.link {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #0156ff;
+    background: none;
+    position: relative;
+    overflow: hidden;
+}
+.link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 2px;
+    background-color: #0156ff;
+    transition: all 0.5s ease 0s;
+}
+.link:hover::after {
+    transform: translateX(0);
+}
+.link:hover {
+    cursor: pointer;
+}
+
+.label {
+}
+.label__title {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.label__subtitle {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+.form-item__label {
+    font-size: 13px;
+    line-height: 2.1;
+    font-weight: 600;
+}
+.form-item__label_red {
+    color: #c94d3f;
+}
+.form-item__line {
+    outline: 1.5px solid #a2a6b0;
+    border-radius: 4px;
+    min-height: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.form-item__line::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #a2a6b0;
+    font-size: 14px;
+}
+
+.registered {
+    max-width: 564px;
+    margin: 0 auto;
+    background-color: #f5f7ff;
+    font-family: "Poppins", sans-serif;
+    padding: 37px 57.5px 41px 57.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.registered__label {
+    margin-bottom: 15px;
+}
+.registered__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.registered__buttons {
+    display: flex;
+    gap: 23px;
+    margin-top: 30px;
+}
+.registered__sign {
+}
+.registered__forgot {
+}
+
+/* ========================= */
+
+.summary {
+    max-width: 446px;
+    margin: 0 auto;
+    background-color: #f5f7ff;
+    font-family: "Poppins", sans-serif;
+    padding: 17.5px 30px 24px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary__title {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+.summary__label {
+    margin-bottom: 13px;
+}
+.label {
+}
+.label_alone {
+    margin: 15px 0px 0px 0px;
+}
+.label_normal > .label__title {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.label_normal > .label__subtitle {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 287px;
+}
+.summary__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+[class*="_pointer"] {
+    cursor: pointer;
+}
+.form-item_radio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+}
+.form-item_radio_top {
+    margin-top: 30px;
+}
+.form-item_radio > .form-item__label {
+    flex: 1 1 100%;
+}
+.form-item_radio > .form-item__line,
+.form-item_radio > .form-item__text {
+    outline: none;
+}
+.form-item_radio > .form-item__line {
+    min-height: 0;
+    transform: translateY(3px);
+}
+.form-item_radio > .form-item__text {
+    flex: 0 1 93%;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.button_bg-none {
+    background: none;
+}
+.button_blue {
+    color: #0156ff;
+    outline: 2px solid #0156ff;
+    transition: all 1s ease 0s;
+}
+.button_blue:hover {
+    color: #fff;
+    background-color: #0156ff;
+    outline: none;
+    transition: all 0.5s ease 0s;
+}
+.summary__discount {
+    margin-top: 20px;
+}
+.stick {
+    height: 1px;
+    width: 100%;
+    background-color: #cacdd8;
+    margin: 30px 0px 10px 0px;
+}
+.summary__cheque {
+}
+.cheque {
+    display: flex;
+    flex-direction: column;
+}
+.cheque__price {
+    display: flex;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: 600;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cheque__name {
+}
+.cheque__number {
+}
+.cheque__advice {
+    flex: 0 1 100%;
+    color: #a2a6b0;
+    font-size: 10px;
+    line-height: 1.8;
+    font-weight: 400;
+    max-width: 300px;
+}
+.cheque__number_total {
+    font-size: 18px;
+}
+.summary__checkout {
+    margin-top: 10px;
+}
+.summary__paypal {
+    background-color: #ffb800;
+    color: #232c65;
+    font-size: 14px;
+    gap: 15px;
+    margin-top: 15px;
+}
+.summary__paypal:hover {
+    opacity: 0.8;
+    background: none;
+    background-color: #ffb800;
+}
+.summary__paypal:active {
+    opacity: 1;
+    background-color: #ffb800;
+}
+.button_gray {
+    color: #666;
+    outline: 2px solid #666;
+    transition: all 1s ease 0s;
+}
+.button_gray:hover {
+    color: #fff;
+    outline: none;
+    background-color: #666;
+    transition: all 0.5s ease 0s;
+}
+.summary__multiple-addresses {
+    margin-top: 15px;
+}
+.summary__zip {
+}
+.zip {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.zip__picture {
+}
+.zip__text {
+    color: #272560;
+    font-size: 12px;
+    font-weight: 600;
+}
+.zip__text_bold {
+    font-weight: 900;
+}
+.zip__link {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* ========================= */
+[class*="_bottom"] {
+    margin-bottom: 100px;
+}
+
+.addres {
+    max-width: 924px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding: 30px 0px 90px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addres__title {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+[class*="addres__"]:not(.addres__stick) {
+    margin-left: 2px;
+}
+.stick {
+}
+.addres__item {
+    max-width: 567px;
+}
+.form-item {
+}
+.form-item__label {
+}
+.form-item__label_red {
+}
+.addres .form-item__line {
+    margin-bottom: 12px;
+}
+.addres__annotation {
+    color: #666;
+    font-size: 13px;
+    line-height: 2.1;
+}
+.form-item__line_pointer {
+}
+.form-item_radio {
+}
+.form-item__text {
+}
+.form-item__text_pointer {
+}
+.label {
+}
+.box-label {
+}
+.label__text {
+}
+.label__text_bold {
+}
+.addres__next {
+    max-width: 210px;
+    margin-top: 20px;
+}
+.button {
+}
+.button_width {
+}
+
+.form-item__label {
+}
+.form-item__line {
+}
+.form-item__text {
+}
+.form-item__text_pointer {
+}
+.label {
+}
+.box-label {
+}
+.label__text {
+}
+.label__text_bold {
+    font-weight: 600;
+}
+.form-item_box {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+.form-item_box .form-item__text {
+    flex: 0 1 600px;
+}

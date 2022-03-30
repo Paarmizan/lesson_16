@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 16</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <form action="#" method="get" class="doggie-form doggie-form_bottom">
+            <p class="doggie-form__title">Make an appointment</p>
+            <div class="doggie-form__box">
+                <input type="text" name="name" placeholder="Name" required class="doggie-form__name">
+                <input type="email" name="email" placeholder="Email" required class="doggie-form__email">
+                <input type="tel" name="phone" placeholder="Phone Number" required class="doggie-form__phone">
+                <input type="text" name="service" placeholder="Select Service" required class="doggie-form__service">
+                <textarea name="aboutus" placeholder="Tell us about your puppers include his/her name"
+                    class="doggie-form__about-us" id="doggie-form__about-us"></textarea>
+            </div>
+            <button type="submit" class="doggie-form__send">Make an Appointment</button>
+        </form>
+
+        <form action="#" method="get" class="registered registered_bottom">
+            <div class="registered__label label">
+                <h2 class="label__title">Registered Customers</h2>
+                <p class="label__subtitle">If you have an account, sign in with your email address.</p>
+            </div>
+
+            <div class="registered__items">
+                <div class="registered__item form-item">
+                    <label class="form-item__label" for="form-item__line1">Email <span
+                            class="form-item__label_red">*</span></label>
+                    <input type="email" name="email" placeholder="Your Name" required class="form-item__line"
+                        id="form-item__line1">
+                </div>
+
+                <div class="registered__item form-item">
+                    <label class="form-item__label" for="form-item__line2">Password <span
+                            class="form-item__label_red">*</span></label>
+                    <input type="password" name="password" placeholder="Your Password" required class="form-item__line"
+                        id="form-item__line2">
+                </div>
+            </div>
+
+            <div class="registered__buttons">
+                <button type="submit" class="registered__sign button">Sign In</button>
+                <button type="button" class="registered__forgot link">Forgot Your Password?</button>
+            </div>
+
+        </form>
+
+        <form action="#" method="get" class="summary summary_bottom">
+
+            <h2 class="summary__title">Summary</h2>
+            <div class="summary__label label label_normal">
+                <h2 class="label__title">Estimate Shipping and Tax</h2>
+                <p class="label__subtitle">Enter your destination to get a shipping estimate.</p>
+            </div>
+
+            <div class="summary__item form-item">
+                <label class="form-item__label" for="form-item__line3">Country</label>
+                <select name="country" id="form-item__line3" class="form-item__line form-item__line_pointer">
+                    <option value="australia">Australia</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </div>
+
+            <div class="summary__item form-item">
+                <label class="form-item__label" for="form-item__line4">State/Province</label>
+                <input type="text" name="province" class="form-item__line" id="form-item__line4">
+            </div>
+
+            <div class="summary__item form-item">
+                <label class="form-item__label" for="form-item__line5">Zip/Postal Code</label>
+                <input type="text" name="postalcode" class="form-item__line" id="form-item__line5">
+            </div>
+
+            <div class="summary__item form-item form-item_radio form-item_radio_top">
+                <p class="form-item__label">Standard Rate</p>
+                <input type="radio" name="rate" value="rate1" class="form-item__line" id="form-item__line6">
+                <label for="form-item__line6" class="form-item__text form-item__text_pointer">Price may
+                    vary
+                    depending on the item/destination. Shop Staff will contact you. $21.00</label>
+            </div>
+
+            <div class="summary__item form-item form-item_radio">
+                <p class="form-item__label">Pickup from store</p>
+                <input type="radio" name="rate" value="rate2" class="form-item__line" id="form-item__line7">
+                <label for="form-item__line7" class="form-item__text form-item__text_pointer">1234 Street
+                    Adress City Address, 1234 $0.00</label>
+            </div>
+
+            <div class="summary__label label label_normal label_alone">
+                <h2 class="label__title">Apply Discount Code</h2>
+            </div>
+
+            <div class="summary__item form-item">
+                <label class="form-item__label" for="form-item__line8">Enter discount code</label>
+                <input type="text" name="discountcode" placeholder="Enter Discount code" class="form-item__line"
+                    id="form-item__line8">
+            </div>
+
+            <button type="button" class="summary__discount button button_bg-none button_blue">Apply Discount</button>
+
+            <div class="summary__stick stick"></div>
+
+            <div class="summary__cheque cheque">
+
+                <div class="cheque__price">
+                    <p class="cheque__name">Subtotal</p>
+                    <p class="cheque__number">$13,047.00</p>
+                </div>
+
+                <div class="cheque__price">
+                    <p class="cheque__name">Shipping </p>
+                    <p class="cheque__number">$21.00</p>
+                    <p class="cheque__advice">(Standard Rate - Price may vary depending on the item/destination. Shop
+                        Staff will contact you.)</p>
+                </div>
+
+                <div class="cheque__price">
+                    <p class="cheque__name">Tax</p>
+                    <p class="cheque__number">$1.91</p>
+                </div>
+
+                <div class="cheque__price">
+                    <p class="cheque__name">GST (10%)</p>
+                    <p class="cheque__number">$1.91</p>
+                </div>
+
+                <div class="cheque__price">
+                    <p class="cheque__name">Order Total</p>
+                    <p class="cheque__number cheque__number_total">$13,068.00</p>
+                </div>
+
+                <button type="button" class="summary__checkout button">Proceed to Checkout</button>
+                <button type="button" class="summary__paypal button paypal-summary">
+                    <span class="paypal-summary__text">Check out with</span>
+                    <img src="img/paypal.svg" alt="иконка" class="paypal-summary__picture">
+                </button>
+                <button type="button" class="summary__multiple-addresses button button_bg-none button_gray">Check Out
+                    with Multiple
+                    Addresses</button>
+
+                <div class="summary__zip zip">
+                    <img src="img/zip.svg" alt="" class="zip__picture">
+                    <p class="zip__text"><span class="zip__text_bold">own</span> it now, up to 6 months interest free <a
+                            href="#" class="zip__link">learn more</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+
+        <form action="#" method="get" class="addres">
+
+            <h2 class="addres__title">Shipping Address</h2>
+
+            <div class="addres__stick stick"></div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres1">Email Address <span
+                        class="form-item__label_red">*</span></label>
+                <input type="email" name="email" required class="form-item__line" id="form-addres1">
+            </div>
+
+            <p class="addres__annotation">You can create an account after checkout.</p>
+
+            <div class="addres__stick stick"></div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres2">First Name <span
+                        class="form-item__label_red">*</span></label>
+                <input type="text" name="firstname" required class="form-item__line" id="form-addres2">
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres3">Last Name <span
+                        class="form-item__label_red">*</span></label>
+                <input type="text" name="lastname" required class="form-item__line" id="form-addres3">
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres4">Company <span
+                        class="form-item__label_red">*</span></label>
+                <input type="text" name="company" required class="form-item__line" id="form-addres4">
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres5">Street Address <span
+                        class="form-item__label_red">*</span></label>
+                <input type="text" name="addresfirst" required class="form-item__line" id="form-addres5">
+                <input type="text" name="addressecond" required class="form-item__line">
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres6">City <span
+                        class="form-item__label_red">*</span></label>
+                <input type="text" name="city" required class="form-item__line" id="form-addres6">
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres7">State/Province <span
+                        class="form-item__label_red">*</span></label>
+                <select name="state" id="form-addres7" required class="form-item__line form-item__line_pointer">
+                    <option value="">Please, select a region, state or province</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                </select>
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres8">Zip/Postal Code <span
+                        class="form-item__label_red">*</span></label>
+                <input type="text" name="zip" required class="form-item__line" id="form-addres8">
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres9">Country <span
+                        class="form-item__label_red">*</span></label>
+                <select name="country" id="form-addres9" required class="form-item__line form-item__line_pointer">
+                    <option value="">skip</option>
+                    <option selected value="australia">Australia</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </div>
+
+            <div class="addres__item form-item">
+                <label class="form-item__label" for="form-addres15">Phone Number <span
+                        class="form-item__label_red">*</span></label>
+                <input type="tel" name="phone" required class="form-item__line" id="form-addres15">
+            </div>
+
+            <div class="addres__stick stick"></div>
+
+            <div class="addres__item form-item form-item_radio form-item_box">
+                <p class="form-item__label">Standard Rate</p>
+                <input type="radio" name="rate" value="rate1" class="form-item__line" id="form-addres10">
+                <label for="form-addres10" class="form-item__text form-item__text_pointer label">
+                    Price may
+                    vary
+                    depending on the item/destination. Shop Staff will contact you.
+                </label>
+                <p class="label__text label__text_bold">$21.00</p>
+            </div>
+
+            <div class="addres__item form-item form-item_radio form-item_box">
+                <p class="form-item__label">Pickup from store</p>
+                <input type="radio" name="rate" value="rate2" class="form-item__line" id="form-addres11">
+                <label for="form-addres11" class="form-item__text form-item__text_pointer label">
+                    1234 Street Adress City Address, 1234
+                </label>
+                <p class="label__text label__text_bold">$0.00</p>
+            </div>
+
+            <button type="submit" class="addres__next button button_width">Next</button>
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
